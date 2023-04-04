@@ -53,3 +53,31 @@
     display: gird;
     grid-template-columns: 150px 2fr;
 }
+
+
+ol{
+    border-right: 1px solid gray;
+    width: 130px;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+h1{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+@media(max-width:600px){
+    #grid{
+        display: block;
+    }
+    ol{
+        border-right:none;
+    }
+    h1{
+        border-bottom:none;
+    }
+}
