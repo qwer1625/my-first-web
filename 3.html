@@ -3,29 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="css/main.css" rel="stylesheet">
     <title>MyWEB</title>
+    <link href ="main.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="title"><a href="index.html">상준HOME</a></h1>
-    <div id="gird">
-        <ol class="menu">
+    <h1><a href="index.html">상준HOME</a>
+        <a style="float:right">
+        <input type="button" value = "Dark" onclick="
+            document.querySelector('body').style.backgroundColor= '#222222';
+            document.querySelector('body').style.color= '#eeeeee';
+        "/>
+        <input type="button" value = "Light" onclick="
+            document.querySelector('body').style.backgroundColor= 'white';
+            document.querySelector('body').style.color= '#222222';
+        "/></a></h1> 
+    <div id="grid">
+        <ol>
             <li><a href="1.html">자기소개</a></li>
             <li><a href="2.html">학교소개</a></li>
             <li><a href="3.html">동아리소개</a></li>
         </ol>
         <div>
-            <h1 class="name">Programmed World</h1>
-            <a href="https://cafe.naver.com/programmedworld"><img class="img" src="club.png"></a>
+            <h1 style = "border-bottom: none;">Programmed World</h1>
+            <a><img src="club.png" width="200"></a>
             <ul>
-                <li class="text">python 기초 배우기</li>
-                <li class="text">팀별 프로젝트</li>
-                <li class="text">인공지능, 딥러닝 이론학습 및 실습</li>
+                <li>python 기초 배우기</li>
+                <li>팀별 프로젝트</li>
+                <li>인공지능, 딥러닝 이론학습 및 실습</li>
             </ul>
-            <p style="color:blue; text-align: center; font-size: 40px;"><a
-                    href="https://tarry-storm-5dd.notion.site/2023-Programmed-World-1a94c587cab8426da0a7f888ea59d28a">자세한
-                    정보 보기</a></p>
+            <p><a href="https://tarry-storm-5dd.notion.site/2023-Programmed-World-1a94c587cab8426da0a7f888ea59d28a">자세한 정보 보기</a></p>
         </div>
     </div>
 </body>
